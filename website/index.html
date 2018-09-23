@@ -3,5 +3,17 @@
 DevOps Project Notes
 <div>
 <a href="http://ec2-18-222-226-16.us-east-2.compute.amazonaws.com:8080/" > Jenkins Login </a>
-</div>         
+</div>    
+
+<ul>
+<li>Use the Master VM for Jenkins, Ansible, Puppet, GIT etc.
+Use the Clean Ubuntu VM image provided in the “Edureka Setup Guide” for Jenkins Slave Node (Test Server)</li>
+<li>Change the IP address of the VMs accordingly</li>
+<li>Add Build Pipeline Plugin and Post-build task plugin to Jenkins on the master VM</li>
+<li>Install python, openssh-server and git on the slave node manually</li>
+<li>Set up the necessary tools such as git, chromedriver(selenium), chromium browser(selenium) on the slave node through Ansible</li>
+<li>Use the image devopsedu/webapp and add your PHP website to it using a Dockerfile</li>
+<li>Create a Selenium Test for your PHP website. It should click on “About” and verify the text written in it. This will conclude the website is deployed and is running fine.</li>
+<li>Push the PHP website, Dockerfile and Selenium JAR to a git repository </li>
+</ul>
          
